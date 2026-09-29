@@ -1,0 +1,254 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1A202C;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Layout wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #F6F7F9;
+    padding-top: 35px;
+    padding-bottom: 95px;
+}
+
+/* Content container */
+.container {
+    max-width: 1360px; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.header__logo a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3563E9;
+}
+
+.header__avatar img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cars section */
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #90A3BF;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Cards grid */
+.cars__cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+}
+
+/* Single car card */
+.car {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.car__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.car__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #90A3BF;
+    margin-bottom: 50px;
+}
+
+.car__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.car__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Car properties */
+.car__properties {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.car__property {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #90A3BF;
+    white-space: nowrap;
+}
+
+/* Card bottom */
+.car__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: center;
+    margin-top: auto;
+}
+
+.car__prices {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.car__price-day {
+    font-size: 14px;
+    color: #90A3BF;
+    font-weight: 700;
+}
+
+.car__price-day span {
+    font-size: 20px;
+    color: #1A202C;
+}
+
+.car__price-current {
+    font-size: 14px;
+    color: #90A3BF;
+    text-decoration: line-through;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #3563E9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #264bbd;
+}
+
+/* Footer */
+.footer__top {
+    padding-top: 80px;
+    padding-bottom: 36px;
+}
+
+.footer__columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px;
+}
+
+/* Nested grid for right footer columns */
+.footer__column .footer__columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.footer__logo a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3563E9;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.footer__text {
+    font-size: 16px;
+    color: #131313;
+    opacity: 0.6;
+    max-width: 290px;
+    line-height: 1.5;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__item {
+    font-size: 16px;
+    color: #131313;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.footer__item:hover {
+    opacity: 1;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0 60px;
+    border-top: 1px solid rgba(19, 19, 19, 0.16);
+}
+
+.footer__copyright {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer__link {
+    font-size: 16px;
+    font-weight: 600;
+}
