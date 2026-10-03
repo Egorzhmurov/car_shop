@@ -91,4 +91,23 @@
     .btn {
         padding: 14px 16px;
     }
+
+    .booking-modal {
+        align-items: flex-end;
+        padding: 12px;
+    }
+
+    .booking-dialog {
+        padding: 22px 18px;
+    }
+
+    .booking-dialog__title {
+        font-size: 20px;
+    }
+
+    .booking-dialog__dates {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 22px;
+    }
 }
