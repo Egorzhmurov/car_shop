@@ -95,6 +95,7 @@
     .booking-modal {
         align-items: flex-end;
         padding: 12px;
+        position:relative ;
     }
 
     .booking-dialog {
